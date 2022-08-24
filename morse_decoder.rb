@@ -1,31 +1,11 @@
 # decode single character
 def decode_char(cha)
   morse_char = {
-    '.-' => 'A',
-    '-...' => 'B',
-    '-.-.' => 'C',
-    '-..' => 'D',
-    '.' => 'E',
-    '..-.' => 'F',
-    '--.' => 'G', 
-    '....' => 'H',
-    '..' => 'I',
-    '.---' => 'J',
-    '-.-' => 'K',
-    '.-..' => 'L',
-    '--' => 'M',
-    '-.' => 'N',
-    '---' => 'O',
-    '.--.' => 'P',
-    '--.-' => 'Q',
-    '.-.' => 'R',
-    '...' => 'S',
-    '-' => 'T',
-    '..-' => 'U',
-    '...-' => 'V',
-    '.--' => 'W',
-    '-..-' => 'X',
-    '-.--' => 'Y',
+    '.-' => 'A','-...' => 'B','-.-.' => 'C','-..' => 'D','.' => 'E',
+    '..-.' => 'F','--.' => 'G','....' => 'H','..' => 'I','.---' => 'J',
+    '-.-' => 'K','.-..' => 'L','--' => 'M','-.' => 'N','---' => 'O',
+    '.--.' => 'P','--.-' => 'Q','.-.' => 'R','...' => 'S','-' => 'T',
+    '..-' => 'U','...-' => 'V','.--' => 'W','-..-' => 'X','-.--' => 'Y',
     '--..' => 'Z'
   }
   
@@ -47,7 +27,7 @@ def split_message(message)
   splited_message = message.split('   ')
   decode_message = ''
 
-  splited_message.each { |word| decode_message += '#{decode_word(word)} ' }
+  splited_message.each { |word| decode_message += "#{decode_word(word)} " }
 
   decode_message
 end
