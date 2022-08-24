@@ -14,10 +14,10 @@
 - GitHub: [@githubhandle](https://github.com/Profsain)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/profsain)
 
-👤 **Favor**
+👤 **Ezeugwa Favour Amarachi**
 
-- GitHub: [@githubhandle](https://github.com/)
-- LinkedIn: [LinkedIn](https://www.linkedin.com/in/)
+- GitHub: [@githubhandle](https://github.com/Favourezeugwa)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/favour-amarachi-ezeugwa-a5bb31149/)
 
 ## Setup
 
