@@ -1,44 +1,43 @@
-# create hash table for character and pattern
-hash_table = {
-  A : ".-",
-  B : "-...",
-  C : "-.-.",
-  D : "-..",
-  E : ".",
-  F : "..-.",
-  G : "--.", 
-  H : "....",
-  I : "..",
-  J : ".---",
-  K : "-.-",
-  L : ".-..",
-  M : "--",
-  N : "-.",
-  O : "---",
-  P : ".--.",
-  Q : "--.-",
-  R : ".-.",
-  S : "...",
-  T : "-",
-  U : "..-",
-  V : "...-",
-  W : ".--",
-  X : "-..-",
-  Y : "-.--",
-  Z : "--..",
-  1 : ".----", 
-  2 : "..---",
-  3 : "...--",
-  4 : "....-",
-  5 : ".....",
-  6 : "-....",
-  7 : "--...",
-  8 : "---..",
-  9 : "----.",
-  0 : "-----"
+# decode single character
+def decode_char(char)
+  morse_char = {
+    ".-" => "A",
+    "-..." => "B",
+    "-.-." => "C",
+    "-.." => "D",
+    "." => "E",
+    "..-." => "F",
+    "--." => "G", 
+    "...." => "H",
+    ".." => "I",
+    ".---" => "J",
+    "-.-" => "K",
+    ".-.." => "L",
+    "--" => "M",
+    "-." => "N",
+    "---" => "O",
+    ".--." => "P",
+    "--.-" => "Q",
+    ".-." => "R",
+    "..." => "S",
+    "-" => "T",
+    "..-" => "U",
+    "...-" => "V",
+    ".--" => "W",
+    "-..-" => "X",
+    "-.--" => "Y",
+    "--.." => "X"
+  }
 
+  morse_char[char]
+end
 
-}
-#  split pattern
-# loop through and match pattern to character
-# return the decoded character
+#  split word pattern and decode char
+def decode_word(word)
+  split_word = word.split(" ")
+  result = ""
+
+  split_word.each { |char| result += decode_char(char)}
+
+  result
+end
