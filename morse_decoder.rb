@@ -35,13 +35,13 @@ end
 # Examples
 
 decode_char('.-') 
-#A
+# A
 
 decode_word('..-. .- ...- --- ..- .-.')
-#FAVOUR
+# FAVOUR
 
 decode_sentence('-- -.--   -. .- -- .')
-#MY NAME
+# MY NAME
 
 decode_sentence('.-   -... --- -..-   ..-. ..- .-.. .-..   --- ..-.   .-. ..- -... .. . ...')
-#A BOX FULL OF RUBIES
+# A BOX FULL OF RUBIES
