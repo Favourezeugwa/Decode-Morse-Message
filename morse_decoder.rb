@@ -30,3 +30,18 @@ def decode_sentence(morse_sentence)
   end
   sentence.join(' ')
 end
+
+
+# Examples
+
+decode_char('.-') 
+#A
+
+decode_word('..-. .- ...- --- ..- .-.')
+#FAVOUR
+
+decode_sentence('-- -.--   -. .- -- .')
+#MY NAME
+
+decode_sentence('.-   -... --- -..-   ..-. ..- .-.. .-..   --- ..-.   .-. ..- -... .. . ...')
+#A BOX FULL OF RUBIES
